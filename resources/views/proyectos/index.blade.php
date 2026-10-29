@@ -11,7 +11,8 @@
 
         {{-- Banner de retroalimentación para acciones de crear, editar o eliminar --}}
         @if (session('success'))
-            <div class="mb-4 p-3 bg-emerald-900 border border-emerald-500 text-emerald-200 rounded text-sm flex items-center justify-between">
+            <div
+                class="mb-4 p-3 bg-emerald-900 border border-emerald-500 text-emerald-200 rounded text-sm flex items-center justify-between">
                 <span>{{ session('success') }}</span>
             </div>
         @endif

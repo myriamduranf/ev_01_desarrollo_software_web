@@ -31,3 +31,6 @@ Route::put('/proyectos/{id}', [ActualizarProyectoController::class, 'update'])->
 Route::get('/proyectos/{id}/borrar', [EliminarProyectoController::class, 'show'])->name('proyectos.borrar');
 Route::get('/proyectos/{id}/eliminar', [EliminarProyectoController::class, 'show'])->name('proyectos.delete');
 Route::delete('/proyectos/{id}', [EliminarProyectoController::class, 'destroy'])->name('proyectos.destroy');
+// 6. Para los Eliminar por id
+Route::post('/proyectos/buscar', [VerProyectoController::class, 'buscarPorId'])->name('proyectos.buscarPorId');
+Route::post('/proyectos/eliminar-id', [EliminarProyectoController::class, 'eliminarPorId'])->name('proyectos.eliminarPorId');
